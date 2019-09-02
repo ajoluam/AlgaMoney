@@ -21,4 +21,12 @@ public class CategoriaResource {
 	public List<Categoria> listar(){
 		return categoriaRepository.findAll();
 	}
+
+//	- Opção se nós estivessemos utilizando ResponseEntity
+//	@GetMapping
+//	public ResponseEntity<List<Categoria>> listar(){
+//		List<Categoria> categorias = categoriaRepository.findAll();
+//		return !categorias.isEmpty() ? ResponseEntity.ok(categorias) : ResponseEntity.noContent().build();
+//	}
 }
+
