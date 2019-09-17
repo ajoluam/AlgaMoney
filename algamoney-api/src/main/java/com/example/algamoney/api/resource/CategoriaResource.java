@@ -45,6 +45,7 @@ public class CategoriaResource {
 //	}
 
 	@PostMapping
+	//Poderia colocar @ResponseStatus(HttpStatus.CREATED) para retornar o status 201 Created  
 	public ResponseEntity<Categoria> criar(@RequestBody Categoria categoria, HttpServletResponse response) {
 		Categoria categoriaSalva = categoriaRepository.save(categoria);
 
