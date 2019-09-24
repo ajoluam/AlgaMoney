@@ -43,7 +43,7 @@ public class AlgaMoneyExceptionHandler extends ResponseEntityExceptionHandler {
 
 	
 	
-	
+	 //Captura as Mensagens de erro para argumentos que não são válidos
 	@Override
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
 			HttpHeaders headers, HttpStatus status, WebRequest request) {
