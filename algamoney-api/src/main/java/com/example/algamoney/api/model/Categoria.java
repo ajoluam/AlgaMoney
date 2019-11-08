@@ -57,7 +57,7 @@ public class Categoria {
 			if (other.codigo != null)
 				return false;
 		} else if (!codigo.equals(other.codigo))
-			return false;  
+			return false;
 		return true;
 	}
 
