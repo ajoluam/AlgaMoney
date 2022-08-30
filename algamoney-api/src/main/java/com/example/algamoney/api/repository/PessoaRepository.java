@@ -10,6 +10,6 @@ import java.util.List;
 public interface PessoaRepository extends JpaRepository<Pessoa, Long> {
 
     @Query("SELECT p FROM Pessoa p WHERE p.ativo = true")
-    List<Object> listar();
+    List<Pessoa> listar();
 
 }
